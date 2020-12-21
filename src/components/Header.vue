@@ -10,9 +10,18 @@
   background-color: @color-dark;
 }
 .ui-header {
+  display: flex;
   width: 1280px;
   margin: 0 auto;
+  .logo {
+    width: 100px;
+    vertical-align: middle;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+  }
   .el-menu {
+    flex: 1;
     background-color: transparent;
     &.el-menu--horizontal {
       border: transparent;
@@ -37,9 +46,18 @@
 <template>
   <div class="ui-header-wrap">
     <div class="ui-header">
-      <el-menu class="el-menu-demo" mode="horizontal" @select="onLangChange">
-        <el-menu-item index="home">{{ $t('header.home') }}</el-menu-item>
-        <el-menu-item index="about">{{ $t('header.aboutUs') }}</el-menu-item>
+      <span class="logo">LOGO</span>
+      <el-menu
+        class="el-menu-demo"
+        mode="horizontal"
+        router
+        default-active="home"
+        @select="onLangChange"
+      >
+        <el-menu-item index="home">
+          {{ $t('header.home') }}
+        </el-menu-item>
+        <!-- <el-menu-item index="about">{{ $t('header.aboutUs') }}</el-menu-item> -->
         <el-submenu class="lang-selector" index="lang">
           <template slot="title">{{ $t('header.lang') }}</template>
           <el-menu-item index="cn">中文-简体</el-menu-item>

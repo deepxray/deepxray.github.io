@@ -9,12 +9,16 @@
     color: #fff;
     text-align: center;
   }
+  .icon {
+    font-size: 22px;
+    vertical-align: middle;
+  }
 }
 </style>
 
 <template>
   <div class="ui-footer">
-    <p>{{ $t('footer.contact') }} keyunluo@tencent.com</p>
+    <p><i class="icon el-icon-message"></i> {{ $t('footer.contact') }} keyunluo@tencent.com</p>
   </div>
 </template>
 

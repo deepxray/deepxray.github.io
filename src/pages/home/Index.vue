@@ -71,15 +71,17 @@ article {
         <p>{{ $t('intro.xray.detail') }}</p>
       </div>
 
-      <h2>{{ $t('intro.articles') }}</h2>
+      <h2>{{ $t('title.articles') }}</h2>
       <article>
         <figure>
           <img src="@/assets/images/article-waf.png" />
         </figure>
         <div>
-          <h3>{{ $t('intro.waf.title') }}</h3>
-          <p>{{ $t('intro.waf.sum') }}</p>
-          <el-button type="primary" class="read-more">{{ $t('op.readMore') }}</el-button>
+          <h3>{{ $t('article.waf.title') }}</h3>
+          <p>{{ $t('article.waf.sum') }}</p>
+          <router-link to="article?id=waf">
+            <el-button type="primary" class="read-more">{{ $t('op.readMore') }}</el-button>
+          </router-link>
         </div>
       </article>
     </div>
@@ -90,8 +92,6 @@ article {
 import utils from '@/common/utils';
 
 utils.reportPV();
-
-console.log('ENV INFO: ', process.env);
 
 export default {};
 </script>
