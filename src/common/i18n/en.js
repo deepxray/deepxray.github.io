@@ -27,7 +27,7 @@ export default {
     },
   },
   article: {
-    waf: {
+    wafRulesPrinter: {
       title: 'About WAF Rules Printer',
       sum: 'Print the defense rules behind the WAF firewall with AI technology',
       detail: `<p><span style="font-size: 26px;">Intro</span></p>

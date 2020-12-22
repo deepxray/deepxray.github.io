@@ -27,7 +27,7 @@ export default {
     },
   },
   article: {
-    waf: {
+    wafRulesPrinter: {
       title: '关于 WAF 规则打印',
       sum: '用AI技术打印出WAF防火墙背后的防御规则',
       detail: `<p><br></p>

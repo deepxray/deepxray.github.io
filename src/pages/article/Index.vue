@@ -53,6 +53,10 @@ article {
   margin-left: 30px;
   margin-top: 30px;
 }
+.no-article {
+  padding: 100px 0;
+  text-align: center;
+}
 </style>
 
 <template>
@@ -62,10 +66,10 @@ article {
     </div>
     <div class="ui-content">
       <article v-if="detail">
-        <h3>{{ $t('article.waf.title') }}</h3>
-        <p v-html="$t('article.waf.detail')"></p>
+        <h3>{{ $t(`article.${id}.title`) }}</h3>
+        <p v-html="$t(`article.${id}.detail`)"></p>
       </article>
-      <p v-else>{{ $t('tip.articleNotFound') }}</p>
+      <p v-else class="no-article">{{ $t('tip.articleNotFound') }}</p>
     </div>
   </div>
 </template>
@@ -86,6 +90,12 @@ export default {
   created() {
     this.id = this.$route.query.id;
     this.detail = en.article[this.id];
+
+    if (this.detail) {
+      utils.trackData('read_article', {
+        article_name: this.id,
+      });
+    }
   },
 };
 </script>

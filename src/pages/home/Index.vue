@@ -79,7 +79,7 @@ article {
         <div>
           <h3>{{ $t('article.waf.title') }}</h3>
           <p>{{ $t('article.waf.sum') }}</p>
-          <router-link to="article?id=waf">
+          <router-link to="article?id=wafRulesPrinter">
             <el-button type="primary" class="read-more">{{ $t('op.readMore') }}</el-button>
           </router-link>
         </div>
