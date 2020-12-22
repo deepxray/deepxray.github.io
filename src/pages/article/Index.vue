@@ -45,6 +45,9 @@ article {
     background-color: transparent !important;
     color: #fff !important;
   }
+  /deep/ li {
+    text-indent: 0;
+  }
 }
 .read-more {
   margin-left: 30px;
