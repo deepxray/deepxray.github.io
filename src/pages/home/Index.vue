@@ -77,8 +77,8 @@ article {
           <img src="@/assets/images/article-waf.png" />
         </figure>
         <div>
-          <h3>{{ $t('article.waf.title') }}</h3>
-          <p>{{ $t('article.waf.sum') }}</p>
+          <h3>{{ $t('article.wafRulesPrinter.title') }}</h3>
+          <p>{{ $t('article.wafRulesPrinter.sum') }}</p>
           <router-link to="article?id=wafRulesPrinter">
             <el-button type="primary" class="read-more">{{ $t('op.readMore') }}</el-button>
           </router-link>
