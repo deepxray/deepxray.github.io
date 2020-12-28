@@ -19,6 +19,8 @@
     line-height: 60px;
     text-align: center;
     font-weight: bold;
+    color: #fff;
+    text-decoration: none;
   }
   .el-menu {
     flex: 1;
@@ -46,7 +48,7 @@
 <template>
   <div class="ui-header-wrap">
     <div class="ui-header">
-      <span class="logo">LOGO</span>
+      <router-link to="home" class="logo">LOGO</router-link>
       <el-menu
         class="el-menu-demo"
         mode="horizontal"
