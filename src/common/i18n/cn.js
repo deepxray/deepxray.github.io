@@ -8,6 +8,7 @@ export default {
   },
   footer: {
     contact: '联系我们：',
+    wechat: '微信公众号',
   },
   op: {
     readMore: '了解更多',

@@ -18,11 +18,39 @@
       line-height: 10vw;
       font-size: 3vw;
     }
+    .logo {
+      width: 20vw;
+      img {
+        width: 10vw;
+        height: 10vw;
+      }
+    }
   }
   .ui-footer {
     width: 100vw !important;
     margin: 20vw auto 5vw !important;
     font-size: 3vw;
+    .detail {
+      display: flex;
+      justify-content: center;
+      > div {
+        width: 25vw;
+        img {
+          width: 25vw;
+          height: 25vw;
+        }
+        &.wechat {
+          width: 25vw;
+          img {
+            width: 20vw;
+            height: 20vw;
+            min-width: 80px;
+            min-height: 80px;
+          }
+          font-size: 3vw;
+        }
+      }
+    }
   }
   .banner {
     width: 100vw !important;

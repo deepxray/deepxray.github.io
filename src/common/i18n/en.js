@@ -6,6 +6,10 @@ export default {
     aboutUs: 'About',
     lang: 'English',
   },
+  footer: {
+    contact: 'Contact us with: ',
+    wechat: 'Weixin Official Account',
+  },
   op: {
     readMore: 'Read More',
   },
@@ -14,9 +18,6 @@ export default {
   },
   tip: {
     articleNotFound: 'Article not found',
-  },
-  footer: {
-    contact: 'Contact us with: ',
   },
   intro: {
     xray: {

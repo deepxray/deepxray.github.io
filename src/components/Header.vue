@@ -21,6 +21,12 @@
     font-weight: bold;
     color: #fff;
     text-decoration: none;
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
   }
   .el-menu {
     flex: 1;
@@ -48,7 +54,10 @@
 <template>
   <div class="ui-header-wrap">
     <div class="ui-header">
-      <router-link to="home" class="logo">LOGO</router-link>
+      <router-link to="home" class="logo">
+        <!-- <img src="@/assets/images/logo-dept-pure.png" /> -->
+        <img src="@/assets/images/logo-zhuque-pure.png" />
+      </router-link>
       <el-menu
         class="el-menu-demo"
         mode="horizontal"
